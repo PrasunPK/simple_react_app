@@ -7,7 +7,7 @@
     height: 80px;
 }
 
-.LeftNav, .App-header, .Container {
+.LeftNav, .App-header, .Container, .PersonalizedStore-Wrapper {
     border: 1px solid #222;
 }
 
@@ -57,10 +57,20 @@
     text-decoration: none;
 }
 
+.Container {
+    padding: 1rem;
+}
+
 .Container-Wrapper {
     padding-left: 0.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
 }
 
 .AppBody {
     display: flex;
+}
+
+.PersonalizedStore-Wrapper {
+    height: 10rem;
 }

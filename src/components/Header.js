@@ -11,7 +11,7 @@ export class Header extends Component {
                         <h1 className="App-title">Virtual Market</h1>
                     </div>
                     <div className="greetings">
-                        <name> First name</name>
+                        <span> First name</span>
                     </div>
                 </header>
             </div>
