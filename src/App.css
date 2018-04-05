@@ -7,7 +7,7 @@
     height: 80px;
 }
 
-.LeftNav, .App-header {
+.LeftNav, .App-header, .Container {
     border: 1px solid #222;
 }
 
@@ -44,6 +44,10 @@
     width: 15rem;
 }
 
+.LeftNav-Wrapper {
+    padding-left: 2.5rem;
+}
+
 .LeftNav > ul > li {
     list-style: none;
     padding: 0.5rem;
@@ -51,4 +55,12 @@
 
 .LeftNav > ul > li > a {
     text-decoration: none;
+}
+
+.Container-Wrapper {
+    padding-left: 0.5rem;
+}
+
+.AppBody {
+    display: flex;
 }

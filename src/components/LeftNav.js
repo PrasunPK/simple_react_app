@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export class LeftNav extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="LeftNav-Wrapper">
                 <div className="LeftNav">
                     <ul>
                         Yes
