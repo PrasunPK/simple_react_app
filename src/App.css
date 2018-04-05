@@ -1,33 +1,54 @@
 .App {
-  padding: 0 2.5rem 0  2.5rem;
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.LeftNav, .App-header {
+    border: 1px solid #222;
 }
 
 .App-header {
-  border: 1px solid #222;
-  height: 150px;
-  padding: 20px;
-  color: #222;
+    height: 150px;
+    padding: 20px;
+    color: #222;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 /* Custom styles */
 
 .greetings {
     text-align: right;
+}
+
+.LeftNav {
+    width: 15rem;
+}
+
+.LeftNav > ul > li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.LeftNav > ul > li > a {
+    text-decoration: none;
 }
