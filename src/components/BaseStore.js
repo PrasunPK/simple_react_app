@@ -1,9 +1,10 @@
 import React from "react";
 
-const Store = ({onLoad, store}) => (
-    <div className="PersonalizedStore-Wrapper" onLoad={onLoad}>
+const Store = ({store}) => (
+    <div className="PersonalizedStore-Wrapper">
         <div className="PersonalizedStore">
-            <div> {store.name} </div>
+            <div> Store name: { store ? store.name : "No store" } </div>
+            <div> Store Location: { store ? store.location : "-" } </div>
             <input type="text" placeholder="Enter the store number"/>
             <button> Save</button>
         </div>

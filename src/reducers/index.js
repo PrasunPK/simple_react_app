@@ -1,12 +1,10 @@
 const stores = (state = [], action) => {
     switch (action.type) {
         case 'GET_STORE':
-            return [
+            return {
                 ...state,
-                {
-                    store: null
-                }
-            ];
+                data: action.data
+            };
         default:
             return state
     }

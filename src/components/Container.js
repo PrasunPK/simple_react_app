@@ -1,14 +1,12 @@
-import React, {Component} from "react";
-import PersonalizedStore from "./Store";
+import React from "react";
+import PersonalizedStore from "./BaseStore";
 
-export class Container extends Component {
-    render() {
-        return (
-            <div className="Container-Wrapper">
-                <div className="Container">
-                    <PersonalizedStore store={"name"}/>
-                </div>
-            </div>
-        );
-    }
-}
+const Container = ({data}) => (
+    <div className="Container-Wrapper">
+        <div className="Container">
+            <PersonalizedStore store={data}/>
+        </div>
+    </div>
+);
+
+export default Container;
