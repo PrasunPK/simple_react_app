@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Header} from './components/Header'
-import {LeftNav} from "./components/LeftNav";
-import {Container} from "./components/Container";
+import PersonalizedStore from "./containers/Stores";
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header/>
+                {/*<Header/>*/}
                 <div className="AppBody">
-                    <LeftNav/>
-                    <Container/>
+                    {/*<LeftNav/>*/}
+                    {/*<Container/>*/}
+                    <PersonalizedStore/>
                 </div>
             </div>
         );
