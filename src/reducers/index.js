@@ -3,7 +3,12 @@ const stores = (state = [], action) => {
         case 'GET_STORE':
             return {
                 ...state,
-                data: action.data
+                store: action.data
+            };
+        case 'GET_PROFILE':
+            return {
+                ...state,
+                profile: action.data
             };
         default:
             return state

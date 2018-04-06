@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
-import container from "../components/Container";
-import {getStore} from "../actions";
+import {getProfile} from "../actions";
+import Header from "../components/Header";
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -10,13 +10,13 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        loadStore: getStore(dispatch)
+        loadProfile: getProfile(dispatch)
     }
 };
 
-const StoresContainer = connect(
+const HeaderContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(container);
+)(Header);
 
-export default StoresContainer;
+export default HeaderContainer;
