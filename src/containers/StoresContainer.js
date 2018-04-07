@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import container from "../components/Container";
-import {getStore} from "../actions";
+import {getStore, saveStore} from "../actions";
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -10,7 +10,14 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        loadStore: getStore(dispatch)
+        loadStore: getStore(dispatch),
+        handleChange: (event) => {
+            dispatch({type: "KEY_VALUE_CHANGE", payload: event.target.value})
+        },
+        handleSave: () => {
+            let storeId = document.querySelector("#personalized-store-id").value;
+            saveStore(dispatch, storeId)
+        }
     }
 };
 

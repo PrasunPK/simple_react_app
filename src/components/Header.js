@@ -10,7 +10,7 @@ const Header = ({profile}) => {
                     <h1 className="App-title">Virtual Market</h1>
                 </div>
                 <div className="greetings">
-                    <span> { profile ? profile.firstName : "Valued Customer" }</span>
+                    <span> {(profile && profile.firstName) ? profile.firstName : "Valued Customer"}</span>
                 </div>
             </header>
         </div>

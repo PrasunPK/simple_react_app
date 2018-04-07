@@ -1,10 +1,12 @@
 import React from "react";
 import PersonalizedStore from "./BaseStore";
 
-const Container = ({store}) => (
+const Container = ({store, handleSave, handleChange}) => (
     <div className="Container-Wrapper">
         <div className="Container">
-            <PersonalizedStore store={store}/>
+            <PersonalizedStore store={store}
+                               handleSave={handleSave}
+                               handleChange={handleChange}/>
         </div>
     </div>
 );

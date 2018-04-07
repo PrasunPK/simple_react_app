@@ -10,6 +10,16 @@ const stores = (state = [], action) => {
                 ...state,
                 profile: action.data
             };
+        case 'UPDATE_PROFILE':
+            return {
+                ...state,
+                profile: action.data
+            };
+        case 'KEY_VALUE_CHANGE':
+            return {
+                ...state,
+                inputStoreValue: action.payload
+            };
         default:
             return state
     }
