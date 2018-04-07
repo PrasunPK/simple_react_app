@@ -1,5 +1,5 @@
 import {connect} from "react-redux";
-import {getProfile} from "../actions";
+import {getProfile, getStore} from "../actions";
 import Header from "../components/Header";
 
 const mapStateToProps = (state, ownProps) => {
@@ -10,7 +10,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        loadProfile: getProfile(dispatch)
+        loadProfile: getProfile(dispatch),
+        loadStore: getStore(dispatch)
     }
 };
 
