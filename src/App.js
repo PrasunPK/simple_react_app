@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import StoresContainer from "./containers/StoresContainer";
 import {LeftNav} from "./components/LeftNav";
-import Header from "./containers/HeaderContainer";
+import Header from "./header/header.container";
 
 class App extends Component {
     render() {

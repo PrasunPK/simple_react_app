@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
 import {getProfile, getStore} from "../actions";
-import Header from "../components/Header";
+import Header from "./header.component";
 
 const mapStateToProps = (state, ownProps) => {
     return {
